@@ -1,4 +1,4 @@
-const [num,...a] = require('fs').readFileSync('dev/stdin').toString().trim().split('\n').map(Number);
+const [num,...a] = require('fs').readFileSync('test.txt').toString().trim().split('\n').map(Number);
 let check = a[a.length-1];
 let ans = 1;
 

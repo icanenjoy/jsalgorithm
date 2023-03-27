@@ -1,4 +1,4 @@
-const [arr,...money] = require('fs').readFileSync('dev/stdin').toString().trim().split('\n');
+const [arr,...money] = require('fs').readFileSync('test.txt').toString().trim().split('\n');
 let ans =[];
 let answer =0;
 for(let i=0;i<money.length;i++){
