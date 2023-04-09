@@ -1,5 +1,6 @@
 const [high, width] = require('fs').readFileSync('test.txt').toString().trim().split(" ").map(Number);
 //말의 진행방향이 오른쪽을 향함
+
 let ans = 0;
 if (high === 1) { //갈 수 있는 곳이 없음
     ans = 1;

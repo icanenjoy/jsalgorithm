@@ -4,6 +4,9 @@ if(a>b){
     a = b;
     b = i;
 }
-let ab= parseInt(a)+parseInt(b);
-let bb= (b-a+1)/2;
-console.log(ab*bb);//잘만나오는데..
+
+if(a===b){
+    console.log(a);
+}else{
+    console.log((a+b)*(b-a+1)/2);
+}
