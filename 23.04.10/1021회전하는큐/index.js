@@ -14,7 +14,11 @@ while(m !== 0){
     let left = 0;
     let right = 0;
     let nowlocation2 = nowlocation;
-
+    if(nowlocation>=n)
+            nowlocation-=n;
+    else if(nowlocation2<0)
+            nowlocation2+=n;
+    
     while(nowlocation !== location[0]-1){ //오른쪽 거리 구하기
         if(arr[nowlocation]===true){ 
             right++;
@@ -31,7 +35,6 @@ while(m !== 0){
         if(nowlocation2<0)
             nowlocation2+=n;
     }
-
     arr[location[0]-1] = false; //값 빼기
     ans += Math.min(right,left); //오른쪽 왼쪽 짧은 거리 선택
     nowlocation = location.shift(); //다음 목표 설정
